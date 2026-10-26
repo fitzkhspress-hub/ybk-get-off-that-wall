@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Off That Wall</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="kicker">2027 Yearbook · In the Spotlight</span>
+    <span class="brand-title">Get Off That Wall</span>
+  </div>
+  <button type="button" id="resetBtn" class="btn ghost small" hidden>Start over</button>
+</header>
+
+<div id="progressWrap" class="progress-wrap" hidden>
+  <div class="progress-label" id="progressLabel"></div>
+  <div class="progress" role="progressbar" aria-labelledby="progressLabel" aria-valuemin="0" id="progressBar"><span id="progressFill"></span></div>
+</div>
+
+<main id="app" class="card" tabindex="-1"></main>
+
+<div id="confirm" class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmText" hidden>
+  <div class="confirm-box">
+    <h2 id="confirmTitle">Start over?</h2>
+    <p id="confirmText">This clears your answers, your name and your certificate. You'll begin again at the introduction.</p>
+    <div class="row">
+      <button type="button" class="btn ghost" id="confirmNo">Keep my progress</button>
+      <button type="button" class="btn danger" id="confirmYes">Yes, start over</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js?v=1"></script>
+</body>
+</html>
